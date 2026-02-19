@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>KJC / 365DF Airdrop Pro</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.2/dist/ethers.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <h2>🚀 KJC / 365DF Airdrop PRO</h2>
+
+  <button id="btnConnect" class="primary">Connect Wallet</button>
+  <div class="wallet-box">
+    Wallet: <span id="wallet">-</span>
+  </div>
+
+  <div class="card">
+    <h3>📋 Address List</h3>
+    <p class="muted">Format: address,amount (1 per line)</p>
+
+    <textarea id="airList" rows="8"
+      placeholder="0xABC...,100
+0xDEF...,250"></textarea>
+
+    <br>
+
+    <button id="btnSendKJC" class="secondary">Send KJC</button>
+    <button id="btnSendDF" class="primary">Send 365DF</button>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="status">
+      ✅ Success: <span id="successCount">0</span> |
+      ❌ Failed: <span id="failCount">0</span>
+    </div>
+
+    <div class="log" id="txLog"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
